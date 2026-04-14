@@ -38,7 +38,7 @@ const slider2 = new Swiper('.slider-2', {
 
   breakpoints: {
     1440: {
-      slidesPerView: 3.2,
+      slidesPerView: 3.4,
       spaceBetween: 24,
     }
   },
@@ -54,10 +54,16 @@ const slider2 = new Swiper('.slider-2', {
 });
 
 function updateScale(swiper) {
+  const isDesktop = window.matchMedia('(min-width: 1440px)').matches;
+
   swiper.slides.forEach(slide => {
     slide.style.transform = 'scale(1)';
   });
 
+  if (!isDesktop) return;
+
   const active = swiper.slides[swiper.activeIndex];
-  if (active) active.style.transform = 'scale(1.1)';
+  if (active) {
+    active.style.transform = 'scale(1.05)';
+  }
 }

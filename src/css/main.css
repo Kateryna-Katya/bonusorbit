@@ -161,3 +161,16 @@ margin-bottom: 4px;
     padding-bottom: 100px;
 }
 }
+/* Gallery */
+.slider-2 .swiper-wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media only screen and (min-width: 1440px) {
+    .gallery-section {
+        background-image: url("/img/gallery/desk.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+}
