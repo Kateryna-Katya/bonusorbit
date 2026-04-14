@@ -46,3 +46,65 @@ background-image: url("/img/home/desk.png");
     font-size: 64px;
  }
 }
+/* Step-by-Step */
+.step-section{
+    background-image: url("/img/step/mob.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+height: 990px;
+}
+.step-text{
+    margin-top: 60px;
+    margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+}
+.step-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.step-item{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+@media only screen and (min-width: 1440px) {
+.step-section {
+        background-image: url("/img/step/desk.png");
+        height: 700px;
+    }
+}
+/* Puzzle Types */
+.puzzle-section{
+    background-image: url("/img/puzzle/mob.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+height: 850px;
+}
+.puzzle-list{
+    margin-top: 40px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.puzzle-item{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+@media only screen and (min-width: 1440px) {
+.puzzle-section {
+    background-image: url("/img/puzzle/desk.png");
+height: 700px;
+    }
+.puzzle-wrapper{
+    margin-top: 29px;
+    margin-right: 89px;
+    margin-left: auto;
+    width: 554px;
+}
+}
