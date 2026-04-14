@@ -108,3 +108,56 @@ height: 700px;
     width: 554px;
 }
 }
+/* Levels */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+.level-container{
+    padding: 60px 0;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 40px;
+}
+.btn{
+    background: inherit;
+    border: none;
+}
+.slider-1 .swiper-slide{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        line-height: 1.5;
+        text-align: center;
+}
+.level-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+margin-top: 12px;
+margin-bottom: 4px;
+}
+@media only screen and (min-width: 1440px) {
+    .level-section{
+        background-image: url("/img/level/desk.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+.level-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+}
