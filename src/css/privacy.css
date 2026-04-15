@@ -57,3 +57,8 @@ font-family: "Inter", sans-serif;
 .policy-span {
     font-weight: 700;
 }
+@media only screen and (min-width: 1440px) {
+.background {
+        background-image: url("/img/policy/desk.png");
+    }
+}
