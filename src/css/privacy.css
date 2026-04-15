@@ -1,0 +1,59 @@
+@import url('./styles.css');
+
+.background {
+    background-image: url("/img/policy/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: left;
+        font-weight: 400;
+}
+
+.privacy-title {
+    margin-top: 70px;
+    margin-bottom: 30px;
+font-size: 32px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #272727;
+    text-align: left;
+}
+
+.policy-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.policy-span {
+    font-weight: 700;
+}
