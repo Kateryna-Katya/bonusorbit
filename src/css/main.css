@@ -174,3 +174,24 @@ margin-bottom: 4px;
         background-size: cover;
     }
 }
+/* Contact */
+.contact-section{
+    background-image: url("/img/contact/mob.png");
+            background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+height: 500px;
+}
+.contact-title{
+    text-align: center;
+}
+.contact-link{
+    display: flex;
+    justify-content: center;
+  margin-top: 54px;
+}
+@media only screen and (min-width: 1440px) {
+ .contact-section{
+    background-image: url("/img/contact/desk.png");
+ }
+}
