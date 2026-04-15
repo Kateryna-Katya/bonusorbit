@@ -195,3 +195,124 @@ height: 500px;
     background-image: url("/img/contact/desk.png");
  }
 }
+/* faq */
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+}
+
+.faq-acc-el-title {
+    margin-bottom: 0;
+}
+
+.faq-acc-el-trigger {
+backdrop-filter: blur(22px);
+    background: rgba(255, 255, 255, 0.1);
+border: 1px solid #ca004a;
+    border-radius: 22px;
+    padding: 16px 12px;
+    width: 335px;
+    height: auto;
+font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #272727;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ca004a;
+    transition: transform 0.3s ease;
+    width: 48px;
+        height: 48px;
+        border-radius: 24px;
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el-descr-frame {
+    background: inherit;
+    width: 335px;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, border-bottom 0.3s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+.faq-acc-el.open .faq-acc-el-trigger {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #272727;
+    visibility: visible;
+    opacity: 1;
+    border: 1px solid #ca004a;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top: none;
+    padding: 0 76px 16px 16px;
+backdrop-filter: blur(22px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 335px;
+    max-height: 500px;
+    margin-bottom: 16px;
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .faq-acc {
+    width: 890px;
+        margin: 0 auto;
+        gap: 16px;
+    }
+.mob{
+    display: none;
+}
+    .faq-acc-el-trigger {
+    width: 890px;
+    font-size: 22px;
+    }
+
+    .faq-acc-el-descr-frame {
+    width: 890px;
+    }
+
+    .faq-acc-el.open .faq-acc-el-descr-frame {
+    width: 890px;
+        margin-top: -1px;
+    }
+}
